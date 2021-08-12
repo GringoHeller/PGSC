@@ -1,0 +1,37 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="duo.webapp.views.crud" />
+          <option value="market.ventasapp.urls.ventasapp" />
+          <option value="market.webapp.views.ventasapp" />
+          <option value="helco.webapp.urls.webapp" />
+          <option value="helco.blog.views.blog" />
+          <option value="blog.models" />
+          <option value="helco.blog.views.template" />
+          <option value="helco.blog.views.posts" />
+          <option value="helco.carro.views.tienda" />
+          <option value="helco.tienda.models.Porducto" />
+          <option value="fetlix.fetlix.urls.series" />
+          <option value="fetlix.series.views.series" />
+          <option value="fetlix.fetlix.urls.*" />
+          <option value="fetlix.series.admin.register" />
+          <option value="fetlix.series.api.views.Response" />
+          <option value="fetlix.series.api.serializers.Dict" />
+          <option value="fetlix.series.api.serializers.series" />
+          <option value="fetlix.series.api.views.series" />
+          <option value="app.inv.views.bases" />
+          <option value="app.inv.models.bases" />
+          <option value="app.inv.urls.bases" />
+          <option value="django.sistemacompras.cyf.inv.models.bases" />
+          <option value="django.sistemacompras.cyf.bases.urls.bases" />
+          <option value="django.sistemacompras.cyf.inv.views.*" />
+          <option value="django.sistemacompras.cyf.cmp.models.bases" />
+          <option value="django.sistemacompras.cyf.cmp.models.*" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
