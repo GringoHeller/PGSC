@@ -74,19 +74,19 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Catálogos de Inventario</h6>
             {% if perms.inv.view_categoria %}
-            <a class="collapse-item" href="#{#% url 'inv:categoria_list' %}">Categorias</a>
+            <a class="collapse-item" href="{% url 'inv:categoria_list' %}">Categoría</a>
             {% endif %}
             {% if perms.inv.view_subcategoria %}
-            <a class="collapse-item" href="#{#% url 'inv:subcategoria_list' %}">Sub Categorias</a>
+            <a class="collapse-item" href="{% url 'inv:subcategoria_list' %}">Sub Categorías</a>
             {% endif %}
             {% if perms.inv.view_marca %}
-            <a class="collapse-item" href="#{#% url 'inv:marca_list' %}">Marca</a>
+            <a class="collapse-item" href="{% url 'inv:marca_list' %}">Marca</a>
             {% endif %}
             {% if perms.inv.view_unidadmedida %}
-            <a class="collapse-item" href="#{#% url 'inv:um_list' %}">Unidad Medida</a>
+            <a class="collapse-item" href="{% url 'inv:um_list' %}">Unidad Medida</a>
             {% endif %}
             {% if perms.inv.view_producto %}
-            <a class="collapse-item" href="#{#% url 'inv:producto_list' %}">Producto</a>
+            <a class="collapse-item" href="{% url 'inv:producto_list' %}">Producto</a>
             {% endif %}
 
             <h6 class="collapse-header">Catálogos de Compras:</h6>
