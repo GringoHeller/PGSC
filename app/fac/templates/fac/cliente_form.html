@@ -4,7 +4,7 @@
         <form role="form" action="{% url 'fac:cliente_edit' obj.pk %}" method="post"  class="form-inline">
         {% else %}
         <form role="form" action="{% url 'fac:cliente_new' %}" method="post"  class="form-inline">
-        {% endif %}
+            {% endif %}
             <div class="col-xl-12 col-md-12 mb-12">
                 {% if obj %}
                 <div class="card border-left-warning shadow h-100 py-2">
@@ -38,7 +38,9 @@
                     </div>
                 </div>
                 </div>
+                </div>
             </div>
         </form>
+        </form>
     </div>
-</div>
+</div> 

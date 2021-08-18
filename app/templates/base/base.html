@@ -40,11 +40,14 @@
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{% url 'bases:home' %}">
-        <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
+        <div class="sidebar-brand-icon">
+          <img src="/static/base/img/Helco-Logo.jpg" width=100% alt="">
         </div>
-        <div class="sidebar-brand-text mx-3">PGSC- <sub> 3.2</sub> </div>
       </a>
+        <p class="ml-3 text-gray-900  mt-2">
+                  <span>Tecnología para la toma de decisiones.</span>
+        </p>
+
 
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
@@ -94,6 +97,13 @@
             {% if perms.cmp.view_proveedor %}
             <a class="collapse-item" href="{% url 'cmp:proveedor_list' %}">Proveedores</a>
             {% endif %}
+
+             <h6 class="collapse-header">Catálogos de Facturación:</h6>
+
+            {% if perms.fac.view_cliente %}
+            <a class="collapse-item" href="{% url 'fac:cliente_list' %}">Cliente</a>
+            {% endif %}
+
           </div>
         </div>
       </li>

@@ -2,13 +2,14 @@ from django.db import models
 
 from bases.models import ClaseModelo
 
+# Create your models here.
 
 class Cliente(ClaseModelo):
-	NAT = 'Natural'
-	JUR = 'Jurídica'
+	NAT='Natural'
+	JUR='Jurídica'
 	TIPO_CLIENTE = [
-		(NAT, 'Natural'),
-		(JUR, 'Jurídica')
+		(NAT,'Natural'),
+		(JUR,'Jurídica')
 	]
 	nombres = models.CharField(
 		max_length=100
@@ -21,7 +22,7 @@ class Cliente(ClaseModelo):
 		null=True,
 		blank=True
 	)
-	tipo = models.CharField(
+	tipo =models.CharField(
 		max_length=10,
 		choices=TIPO_CLIENTE,
 		default=NAT
@@ -34,7 +35,6 @@ class Cliente(ClaseModelo):
 		self.nombres = self.nombres.upper()
 		self.apellidos = self.apellidos.upper()
 		super(Cliente, self).save()
-	
+		
 	class Meta:
-		verbose_name_plural = "Clientes"
-
+		verbose_name="Clientes"
