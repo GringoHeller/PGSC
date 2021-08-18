@@ -98,8 +98,8 @@ def detalle_compra_borrar(sender, instance, **kwargs):
 	if enc:
 		sub_total = ComprasDet.objects.filter(compra=id_compra).aggregate(Sum('sub_total'))
 		descuento = ComprasDet.objects.filter(compra=id_compra).aggregate(Sum('descuento'))
-		enc.sub_total = sub_total['sub_total__sum']
-		enc.descuento = descuento['descuento__sum']
+		enc.sub_total = sub_total['sub_total__sum'] or 0
+		enc.descuento = descuento['descuento__sum'] or 0
 		enc.save()
 	
 	prod = Producto.objects.filter(pk=id_producto).first()
